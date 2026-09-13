@@ -28,9 +28,9 @@
             // | SHFT |  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
             bindings = <
-                &kp TAB   &kp DE_Q &kp W &kp F &kp P &kp B &kp C_MUTE &kp C_PP &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp BSPC
-                &kp LCTRL &kp A &kp R &kp S &kp T &kp G &kp LALT   &kp RALT &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
-                &kp LSHFT &kp Z &kp X &kp C &kp D &kp V                     &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                &kp TAB   &kp DE_Q &kp DE_W &kp DE_F &kp DE_P &kp DE_B &kp C_MUTE &kp C_PP &kp DE_J &kp DE_L  &kp DE_U     &kp DE_Y   &kp DE_SEMI &kp BSPC
+                &kp LCTRL &kp DE_A &kp DE_R &kp DE_S &kp DE_T &kp DE_G &kp LALT   &kp RALT &kp DE_M &kp DE_N  &kp DE_E     &kp DE_I   &kp DE_O    &kp DE_SQT
+                &kp LSHFT &kp DE_Z &kp DE_X &kp DE_C &kp DE_D &kp DE_V                     &kp DE_K &kp DE_H  &kp DE_COMMA &kp DE_DOT &kp DE_FSLH &kp ESC
                                       &kp LGUI &mo 1 &kp SPACE              &kp RET &mo 2 &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_VOL_DN C_VOL_UP>;
