@@ -23,21 +23,21 @@
         combo_cut {
             bindings = <&kp LC(X)>;
             key-positions = <30 29>;
-            timeout-ms = <50>;
+            timeout-ms = <150>;
             layers = <0>;
         };
 
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <30 31>;
-            timeout-ms = <50>;
+            timeout-ms = <150>;
             layers = <0>;
         };
 
         combo_paste {
             bindings = <&kp LC(V)>;
             key-positions = <32 33>;
-            timeout-ms = <50>;
+            timeout-ms = <150>;
             layers = <0>;
         };
     };
