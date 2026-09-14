@@ -23,8 +23,8 @@
         default_layer {
             display-name = "Colemak-DH";
             // --------------------------------------------------------------------------------
-            // |  ESC |  Q  |  W  |  F  |  P  |  B  |  PP   |  MUTE |  J  |  L   |  U  |  Y  |  ;  | BSPC |
-            // |  TAB |  A  |  R  |  S  |  T  |  G  |  LALT |  RALT |  M  |  N   |  E  |  I  |  O  |  '   |
+            // |  ESC |  Q  |  W  |  F  |  P  |  B  |  LALT |  RALT |  J  |  L   |  U  |  Y  |  ;  | BSPC |
+            // |  TAB |  A  |  R  |  S  |  T  |  G  |  PP   |  MUTE |  M  |  N   |  E  |  I  |  O  |  '   |
             // | SHFT |  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  | SHFT |
             //                    | GUI | LWR | SPC |               | ENT | RSE  | RCTRL|
             bindings = <
