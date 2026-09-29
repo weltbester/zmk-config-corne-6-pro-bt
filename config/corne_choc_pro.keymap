@@ -78,29 +78,29 @@
         raise_layer {
             display-name = "SYMBOL";
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL | HUD | HUI |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // |  ESC |  !  |  @  |  #  |  $  |  %  | LALT | RALT |  ^  |  &  |  *  |  (  |  )  | BSPC |
+            // |  TAB | HUD | HUI |     |     |     | PP   | MUTE |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |               | ENT |     | ALT |
             bindings = <
-                &kp  TAB  &kp DE_EXCL     &kp DE_AT       &kp DE_HASH &kp DE_DLLR &kp DE_PRCNT &kp LCTRL &kp RCTRL &kp DE_CARET &kp DE_AMPS  &kp DE_ASTRK &kp DE_LPAR &kp DE_RPAR &kp BSPC
-                &kp LCTRL &rgb_ug RGB_HUD &rgb_ug RGB_HUI &trans      &trans      &trans       &kp LALT  &kp RALT  &kp DE_MINUS &kp DE_EQUAL &kp DE_LBKT  &kp DE_RBKT &kp DE_BSLH &kp DE_GRAVE
-                &kp LSHFT &trans          &trans          &trans      &trans      &trans                           &kp DE_UNDER &kp DE_PLUS  &kp DE_LBRC  &kp DE_RBRC &kp DE_PIPE &kp DE_TILDE
-                                                          &kp LGUI    &trans      &kp SPACE                     &kp RET   &trans    &kp RALT
+                &trans  &kp DE_EXCL     &kp DE_AT       &kp DE_HASH &kp DE_DLLR &kp DE_PRCNT &trans &trans &kp DE_CARET &kp DE_AMPS  &kp DE_ASTRK &kp DE_LPAR &kp DE_RPAR &kp BSPC
+                &trans &rgb_ug RGB_HUD &rgb_ug RGB_HUI &trans      &trans      &trans       &trans  &trans  &kp DE_MINUS &kp DE_EQUAL &kp DE_LBKT  &kp DE_RBKT &kp DE_BSLH &kp DE_GRAVE
+                &trans &trans          &trans          &trans      &trans      &trans                           &kp DE_UNDER &kp DE_PLUS  &kp DE_LBRC  &kp DE_RBRC &kp DE_PIPE &kp DE_TILDE
+                                                          &trans    &mo 1      &trans                     &trans   &trans    &trans
             >;
         };
 
         extra_layer_1 {
             display-name = "FUNCTION";
             // -----------------------------------------------------------------------------------------
-            // |  TAB | F1  | F2  | F3  | F4  | F5  | LCTRL | RCTRL | F6  | F7  | F8  | F9  | F10  | BSPC |
-            // | CTRL | F11 | F12 |     |     |     |  LALT | RALT  |PSRC |SLCK |PAUS |     |      |      |
+            // |  ESC | F1  | F2  | F3  | F4  | F5  | LCTRL | RCTRL | F6  | F7  | F8  | F9  | F10  | BSPC |
+            // |  TAB | F11 | F12 |     |     |     |  LALT | RALT  |PSRC |SLCK |PAUS |     |      |      |
             // | SHFT |     |     |     |     |     |               |     |     |     |     |      |      |
             //                    | GUI |     | SPC |               | ENT |     | ALT |
             bindings = <
-                &kp  TAB  &kp F1  &kp F2  &kp F3 &kp F4 &kp F5       &trans &trans &kp F6 &kp F7  &kp F8 &kp F9 &kp F10 &trans
-                &kp LCTRL &kp F11 &kp F12 &trans &trans &trans       &trans &trans &trans &trans &trans  &trans &trans  &trans
-                &kp LSHFT &trans  &trans  &trans &trans &trans       &trans &trans &trans &trans &trans  &trans &trans  &trans
+                &trans  &kp F1  &kp F2  &kp F3 &kp F4 &kp F5       &trans &trans &kp F6 &kp F7  &kp F8 &kp F9 &kp F10 &trans
+                &trans &kp F11 &kp F12 &trans &trans &trans       &trans &trans &trans &trans &trans  &trans &trans  &trans
+                &trans &trans  &trans  &trans &trans &trans       &trans &trans &trans &trans &trans  &trans &trans  &trans
                                   &trans  &trans &trans              &trans &trans &trans
             >;
         };
