@@ -81,14 +81,14 @@
             display-name = "SYMBOL";
             // -----------------------------------------------------------------------------------------
             // |  ESC |  !  |  "  |  §  |  $  |  %  | LALT | RALT |  &  |  /  |  (  |  )  |  =  | BSPC |
-            // |  TAB | HUD | HUI |  <  |  >  |  #  | PP   | MUTE |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // |  TAB |  <  | HUD | HUI |  >  |  #  | PP   | MUTE |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |  @  |  *  |  ^  |  ?  |  €  |             |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |             | ENT |     |RCTRL |
             bindings = <
-                &trans  &kp DE_EXCL     &kp DE_DQT       &kp DE_SECTION &kp DE_DLLR &kp DE_PRCNT &trans &trans &kp DE_AMPS &kp DE_FSLH  &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL &kp BSPC
-                &trans &rgb_ug RGB_HUD &rgb_ug RGB_HUI &kp DE_LT      &kp DE_GT      &kp DE_HASH       &trans  &trans  &kp DE_MINUS &kp DE_EQUAL &kp DE_LBKT  &kp DE_RBKT &kp DE_BSLH &kp DE_GRAVE
-                &trans &kp DE_AT          &kp DE_ASTRK          &kp DE_CARET      &kp DE_QMARK      &kp DE_EURO                           &kp DE_UNDER &kp DE_PLUS  &kp DE_LBRC  &kp DE_RBRC &kp DE_PIPE &kp DE_TILDE
-                                                          &trans    &mo 1      &trans                     &trans   &trans    &trans
+                &trans  &kp DE_EXCL   &kp DE_DQT      &kp DE_SECTION   &kp DE_DLLR  &kp DE_PRCNT &trans &trans   &kp DE_AMPS &kp DE_FSLH  &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL &kp BSPC
+                &trans &kp DE_LT      &rgb_ug RGB_HUD &rgb_ug RGB_HUI  &kp DE_GT    &kp DE_HASH  &trans  &trans  &kp DE_MINUS &kp DE_EQUAL &kp DE_LBKT  &kp DE_RBKT &kp DE_BSLH &kp DE_GRAVE
+                &trans &kp DE_AT      &kp DE_ASTRK    &kp DE_CARET     &kp DE_QMARK &kp DE_EURO                  &kp DE_UNDER &kp DE_PLUS  &kp DE_LBRC  &kp DE_RBRC &kp DE_PIPE &kp DE_TILDE
+                                                          &trans    &mo 1      &trans                            &trans   &trans    &trans
             >;
         };
 
@@ -96,14 +96,14 @@
             display-name = "FUNCTION";
             // -----------------------------------------------------------------------------------------
             // |  ESC | F1  | F2  | F3  | F4  | F5   | LALT | RALT | F6  | F7  | F8  | F9  | F10  | BSPC |
-            // |  TAB | F11 | F12 |     |     |RGB_R | PP   | MUTE  |PSRC |SLCK |PAUS |     |      |      |
+            // |  TAB | F11 | F12 |     |     |      | PP   | MUTE  |PSRC |SLCK |PAUS |     |      |      |
             // | SHFT |     |     |     |     |      |               |     |     |     |     |      |      |
             //                    | GUI |     | SPC  |               | ENT |     | ALT |
             bindings = <
-                &trans  &kp F1  &kp F2  &kp F3 &kp F4 &kp F5       &trans &trans &kp F6 &kp F7  &kp F8 &kp F9 &kp F10 &trans
-                &trans &kp F11 &kp F12 &trans &trans &rgb_ug RGB_COLOR_HSB(0,0,60)       &trans &trans &trans &trans &trans  &trans &trans  &trans
+                &trans  &kp F1  &kp F2  &kp F3 &kp F4 &kp F5      &trans &trans &kp F6 &kp F7  &kp F8 &kp F9 &kp F10 &trans
+                &trans &kp F11 &kp F12 &trans &trans &trans       &trans &trans &trans &trans &trans  &trans &trans  &trans
                 &trans &trans  &trans  &trans &trans &trans       &trans &trans &trans &trans &trans  &trans &trans  &trans
-                                  &trans  &trans &trans              &trans &trans &trans
+                                       &trans  &trans &trans      &trans &trans &trans
             >;
         };
 
