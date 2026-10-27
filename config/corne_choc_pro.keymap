@@ -73,7 +73,7 @@
                 &trans &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &trans &trans &kp KP_N7   &kp KP_N8   &kp KP_N9 &kp KP_SLASH &kp KP_ASTERISK &kp BSPC
                 &trans &kp LEFT     &kp DOWN        &kp UP       &kp RIGHT    &out OUT_TOG       &trans &trans &kp KP_N4   &kp KP_N5   &kp KP_N6 &kp KP_PLUS  &kp KP_MINUS    &kp KP_EQUAL
                 &trans &bt BT_CLR   &rgb_ug RGB_TOG &sys_reset   &bootloader  &studio_unlock                   &kp KP_N1   &kp KP_N2   &kp KP_N3 &kp DE_DOT   &kp DE_COMMA    &trans
-                                                       &trans    &mo 1        &trans                   &trans  &kp KP_N0   &trans
+                                                       &trans    &mo 1        &trans                   &kp KP_N0  &mo 2   &trans
             >;
         };
 
@@ -81,7 +81,7 @@
             display-name = "SYMBOL";
             // -----------------------------------------------------------------------------------------
             // |  ESC |  !  |  "  |  §  |  $  |  %  | LALT | RALT |  &  |  /  |  (  |  )  |  =  | BSPC |
-            // |  TAB |  <  |  `  |  ´  |  >  |  #  | PP   | MUTE |  -  |  =  |  [  |  ]  |  \  |  '   |
+            // |  TAB |  <  |  ´  |  `  |  >  |  #  | PP   | MUTE |  -  |  =  |  [  |  ]  |  \  |  '   |
             // | SHFT |  @  |  *  |  ^  |  ?  |  €  |             |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |             | ENT |     |RCTRL |
             bindings = <
@@ -96,12 +96,12 @@
             display-name = "FUNCTION";
             // -----------------------------------------------------------------------------------------
             // |  ESC | F1  | F2  | F3  | F4  | F5   | LALT | RALT  | F6  | F7  | F8  | F9  | F10  | BSPC |
-            // |  TAB | F11 | F12 | HUD | HUI |  G   | PP   | MUTE  |PSRC |SLCK |PAUS |     |      |      |
+            // |  TAB | F11 | F12 | HUD | HUI |      | PP   | MUTE  |PSRC |SLCK |PAUS |     |      |      |
             // | SHFT |     |     |     |     |      |              |     |     |     |     |      |      |
             //                    | GUI |     | SPC  |              | ENT |     | ALT |
             bindings = <
                 &trans  &kp F1  &kp F2  &kp F3 &kp F4 &kp F5      &trans &trans &kp F6 &kp F7  &kp F8 &kp F9 &kp F10 &trans
-                &trans &kp F11 &kp F12 &rgb_ug RGB_HUD &rgb_ug RGB_HUI &trans       &kp DE_G &trans &trans &trans &trans  &trans &trans  &trans
+                &trans &kp F11 &kp F12 &rgb_ug RGB_HUD &rgb_ug RGB_HUI &trans       &trans &trans &kp PRINTSCREEN &kp SCROLLLOCK &kp PAUSE_BREAK  &trans &trans  &trans
                 &trans &trans  &trans  &trans &trans &trans       &trans &trans &trans &trans &trans  &trans &trans  &trans
                                        &trans  &trans &trans      &trans &trans &trans
             >;
