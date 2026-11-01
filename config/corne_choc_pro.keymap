@@ -29,6 +29,48 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        tog_on: toggle_layer_on {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer On";
+            toggle-mode = "on";
+        };
+
+        tog_off: toggle_layer_off {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer Off";
+            toggle-mode = "off";
+        };
+    };
+
+    macros {
+        bt_mac0: bt_mac0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&tog_off 4>;
+        };
+        bt_mac1: bt_mac1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&tog_off 4>;
+        };
+        bt_win: bt_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&tog_on 4>;
+        };
+        bt_mac3: bt_mac3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&tog_off 4>;
+        };
+        bt_mac4: bt_mac4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>, <&tog_off 4>;
+        };
     };
 };
 
@@ -70,7 +112,7 @@
             // | SHFT | BTCR| RGB | RST | BOOT| Unlock |       |      |  1  |  2  |  3  |  .  |  ,  | SHFT |
             //                    | GUI | LWR | SPC    |       | ENT  |  0  |RCTRL|
             bindings = <
-                &trans &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &trans &trans &kp KP_N7   &kp KP_N8   &kp KP_N9 &kp KP_SLASH &kp KP_ASTERISK &kp BSPC
+                &trans &bt_mac0 &bt_mac1 &bt_win &bt_mac3 &bt_mac4       &trans &trans &kp KP_N7   &kp KP_N8   &kp KP_N9 &kp KP_SLASH &kp KP_ASTERISK &kp BSPC
                 &trans &kp LEFT     &kp DOWN        &kp UP       &kp RIGHT    &out OUT_TOG       &trans &trans &kp KP_N4   &kp KP_N5   &kp KP_N6 &kp KP_PLUS  &kp KP_MINUS    &kp KP_EQUAL
                 &trans &bt BT_CLR   &rgb_ug RGB_TOG &sys_reset   &bootloader  &studio_unlock                   &kp KP_N1   &kp KP_N2   &kp KP_N3 &kp DE_DOT   &kp DE_COMMA    &trans
                                                        &trans    &mo 1        &trans                   &kp KP_N0  &mo 2   &trans
@@ -108,12 +150,18 @@
         };
 
         extra_layer_2 {
-            display-name = "EXTRA 2";
+            display-name = "WINDOWS";
+            display-name = "FUNCTION";
+            // -----------------------------------------------------------------------------------------
+            // |    |    |    |    |    |     |    |    |    |    |    |    |    |    |
+            // |    |    |    |    |    |     |    |    |    |    |    |    |    |    |
+            // |    |    |    |    |    |     |    |    |    |    |    |    |    |    |
+            //                          |LCTRL|    | SPC|              |    |    |GUI |
             bindings = <
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
+                                     &kp LCTRL &trans &trans            &trans &trans &kp LGUI
             >;
         };
 
